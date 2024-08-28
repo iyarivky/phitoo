@@ -1,0 +1,6 @@
+[package]
+name = "phitoo"
+version = "0.1.0"
+edition = "2021"
+description = "v2ray URL parser"
+repository = "https://github.com/iyarivky/phitoo/"
