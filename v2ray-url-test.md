@@ -15,3 +15,11 @@ vmess://eyJ2IjoiMiIsInBzIjoiYWt1bnNzaC1idW1pIiwiYWRkIjoic2cxLXZtZXNzLmRuc3gubXku
 ```
 vmess://eyJ2IjoiMiIsInBzIjoiYWt1bnNzaC1idW1pIiwiYWRkIjoic2cxLXZtZXNzLmRuc3gubXkuaWQiLCJwb3J0IjoiODAiLCJpZCI6IjFiMzFjYjJlLTc5MDQtMTFlZi05NTM4LTRmNDhjNGFkMTkzNyIsImFpZCI6IjAiLCJuZXQiOiJ3cyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0eXBlIjoiIiwiaG9zdCI6IiIsInBhdGgiOiIvdm1lc3MiLCJ0bHMiOiIifQ==
 ```
+
+## Trojan
+```
+trojan://opentunnel.net-imiya@ust-2.optnl.com:443?sni=example.com#opentunnel.net-imiya
+```
+```
+trojan://HjFvTHArRtFScVNJQIBrjCejelvHATUk@gkifo-8-tr-0.tw-tpe-hinet-0-0.o-two.xyz:889/?type=tcp&security=tls&sni=o-two.bond#%F0%9F%87%B9%F0%9F%87%BCTW-61.228.92.76-3154
+```
