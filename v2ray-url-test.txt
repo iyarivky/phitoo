@@ -1,2 +1,0 @@
-vless://fe841e7b-7631-4a44-b529-6472a1198202@quiz.int.vidio.com:443?encryption=none&security=tls&sni=sg1.v2vless.site&type=ws&host=sg1.v2vless.site&path=%2Fvless#sshocean-iyarivky-ws
-vless://fe841e7b-7631-4a44-b529-6472a1198202@quiz.int.vidio.com:443?encryption=none&security=tls&sni=sg1.v2vless.site&type=grpc&serviceName=vless-grpc&mode=gun#sshocean-iyarivky-gRPC
