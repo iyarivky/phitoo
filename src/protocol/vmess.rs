@@ -22,17 +22,13 @@ struct VmessConfig {
 }
 
 pub fn parse_vmess(url: String) -> Phitoo {
-    // Menghapus prefix "vmess://"
     let base64_data = &url[8..];
 
-    // Dekode base64
     let decoded_data = general_purpose::STANDARD.decode(base64_data).unwrap();
     let json_data = String::from_utf8(decoded_data).unwrap();
 
-    // Parse JSON
     let config: VmessConfig = serde_json::from_str(&json_data).unwrap();
 
-    // Mendapatkan nilai-nilai yang dibutuhkan dan pindahkan ke String
     let protocol = "vmess".to_string();
     let uuid = config.id;
     let host = config.add;
