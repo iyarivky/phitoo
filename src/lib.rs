@@ -1,6 +1,6 @@
 mod protocol;
 
-use protocol::{vmess, vless};
+use protocol::{vmess, vless, trojan, http, socks, shadowsocks};
 
 pub struct Phitoo {
     pub protocol: String,
@@ -13,11 +13,15 @@ pub struct Phitoo {
 impl Phitoo {
     pub fn parse(url: &str) -> Self {
         let protocol_end = url.find("://").expect("Format URL tidak valid");
-        let protocol = url[..protocol_end].to_string();  // Convert to String
+        let protocol = url[..protocol_end].to_string();
 
         match protocol.as_str() {
             "vless" => vless::parse_vless(url.to_string()),
             "vmess" => vmess::parse_vmess(url.to_string()),
+            "trojan" => trojan::parse_trojan(url.to_string()),
+            "http" => http::parse_http(url.to_string()),
+            "socks" => socks::parse_socks(url.to_string()),
+            "ss" => shadowsocks::parse_ss(url.to_string()),
             _ => panic!("Protokol tidak didukung: {}", protocol),
         }
     }
