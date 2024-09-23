@@ -5,6 +5,7 @@ use protocol::{vmess, vless};
 pub struct Phitoo {
     pub protocol: String,
     pub uuid: String,
+    pub password: String,
     pub host: String,
     pub port: u16,
 }

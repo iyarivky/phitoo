@@ -31,12 +31,14 @@ pub fn parse_vmess(url: String) -> Phitoo {
 
     let protocol = "vmess".to_string();
     let uuid = config.id;
+    let password = uuid.clone();
     let host = config.add;
     let port: u16 = config.port.parse().unwrap();
 
     Phitoo {
         protocol,
         uuid,
+        password,
         host,
         port,
     }
